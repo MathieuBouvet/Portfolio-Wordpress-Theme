@@ -15,6 +15,7 @@
 		public function loadHomepageAssets(){
 			if(is_front_page()){
 				wp_enqueue_style('homepage', get_stylesheet_directory_uri()."/assets/css/homepage.css");
+				wp_enqueue_script('homepage', get_stylesheet_directory_uri()."/assets/scripts/homepage.js",array('jquery'));
 			}
 		}
 	}
