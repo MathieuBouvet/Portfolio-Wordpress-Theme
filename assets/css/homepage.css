@@ -14,6 +14,10 @@
 #primary article.drawings.type-drawings {
 	width: 100%;
 	float: none;
-
-	height: calc(100vh - var(--menu-height));
+	height: 100vh;
+}
+@media screen and (min-width: 48em){
+	#primary article.drawings.type-drawings {
+		height: calc(100vh - var(--menu-height));
+	}
 }
