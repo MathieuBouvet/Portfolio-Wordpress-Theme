@@ -3,7 +3,17 @@
 	--menu-height:0;
 
 }
+.site-content {
+	padding: 20px;
+}
+#content #primary {
+	margin-left: 0;
+	margin-right: 0;
+	max-width: 100%;
+}
 #primary article.drawings.type-drawings {
 	width: 100%;
 	float: none;
+
+	height: calc(100vh - var(--menu-height));
 }
