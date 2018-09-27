@@ -43,9 +43,10 @@
 
 	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
 		<div class="post-thumbnail">
-			<a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
-			</a>
+			<?php //the_post_thumbnail( 'twentyseventeen-featured-image' ); 
+				//echo get_the_post_thumbnail_url(get_the_ID());
+			?>
+			<img class="drawing-image" alt="<?php the_title()?>" src="<?php the_post_thumbnail_url(get_the_ID()) ?>"/>
 		</div><!-- .post-thumbnail -->
 	<?php endif; ?>
 
