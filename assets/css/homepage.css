@@ -1,3 +1,8 @@
+
+:root {
+	--menu-height:0;
+
+}
 #primary article.drawings.type-drawings {
 	width: 100%;
 	float: none;
