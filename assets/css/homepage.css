@@ -41,3 +41,7 @@ img.drawing-image {
 		height: calc(100vh - var(--menu-height));
 	}
 }
+.fixed {
+	position: fixed;
+	top: calc(var(--menu-height) + 20px);
+}
