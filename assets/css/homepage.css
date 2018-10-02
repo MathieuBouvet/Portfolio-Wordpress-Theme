@@ -49,13 +49,17 @@ img.drawing-image {
 	z-index: 5;
 	background-color: inherit;
 }
+.slide-fixed {
+	position: fixed;
+	top: 0;
+	z-index: 0;
+}
 @media screen and (min-width: 48em){
 	#primary article.drawings.type-drawings {
 		height: calc(100vh - var(--menu-height));
 	}
-}
-.slide-fixed {
-	position: fixed;
-	top: calc(var(--menu-height));
-	z-index: 0;
+
+	.slide-fixed {
+		top: calc(var(--menu-height));
+	}
 }
