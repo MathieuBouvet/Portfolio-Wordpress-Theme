@@ -2,6 +2,7 @@
 :root {
 	--menu-height: 0px;
 	--admin-panel: 0px;
+	--menu-fixed: 0;
 }
 .site-content {
 	padding: 0;
@@ -61,5 +62,9 @@ img.drawing-image {
 
 	.slide-fixed {
 		top: calc(var(--menu-height) + var(--admin-panel));
+	}
+
+	:root {
+		--menu-fixed: 1;
 	}
 }
