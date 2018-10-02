@@ -1,7 +1,7 @@
 
 :root {
-	--menu-height:0;
-
+	--menu-height: 0px;
+	--admin-panel: 0px;
 }
 .site-content {
 	padding: 0;
@@ -17,7 +17,7 @@
 #primary article.drawings.type-drawings {
 	width: 100%;
 	float: none;
-	height: 100vh;
+	height: calc(100vh - var(--admin-panel));
 	padding-bottom: 0;
 	background-color: #fff;
 	
@@ -51,15 +51,15 @@ img.drawing-image {
 }
 .slide-fixed {
 	position: fixed;
-	top: 0;
+	top: var(--admin-panel);
 	z-index: 0;
 }
 @media screen and (min-width: 48em){
 	#primary article.drawings.type-drawings {
-		height: calc(100vh - var(--menu-height));
+		height: calc(100vh - var(--menu-height) - var(--admin-panel));
 	}
 
 	.slide-fixed {
-		top: calc(var(--menu-height));
+		top: calc(var(--menu-height) + var(--admin-panel));
 	}
 }
