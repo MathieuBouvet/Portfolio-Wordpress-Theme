@@ -8,6 +8,10 @@
 			root.style.setProperty("--admin-panel", adminBar.outerHeight()+"px");
 		}
 
+		window.addEventListener('resize', function(){
+			root.style.setProperty("--menu-height", $(".navigation-top").outerHeight()+"px");
+		});
+
 		
 	});
 })(jQuery);
