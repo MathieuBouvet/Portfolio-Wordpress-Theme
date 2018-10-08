@@ -23,7 +23,7 @@
 	float: none;
 	height: calc(100vh - var(--admin-panel));
 	padding-bottom: 0;
-	background-color: #111;
+	background-color: rgb(34,34,34);
 
 	
 	
@@ -46,6 +46,7 @@
 	/* padding-left: 50px;
 	padding-right: 50px; */
 	flex: 1;
+	min-height: 0;
 
 	display: flex;
 }
@@ -68,13 +69,13 @@ img.drawing-image {
 	
 	/* box-shadow: 0 0 5px 2px rgba(54,54,54,1) inset; */
 	/* border-top: 2px solid rgba(34,34,34,0.75); */
-	transition: background 2s;
+	/* transition: background 0.5s; */
 }
 .slide-fixed {
 	position: fixed;
 	top: var(--admin-panel);
 	z-index: 0;
-	background-color: rgba(34,34,34);
+	/* background-color: rgba(34,34,34); */
 }
 @media screen and (min-width: 48em){
 	#primary article.drawings.type-drawings {
