@@ -20,8 +20,9 @@ get_header(); ?>
 					 */
 					get_template_part( 'template-parts/post/content-drawing', get_post_format() );
 
-				endwhile;
-
+				endwhile;?>
+				</main><!-- #main -->
+				<?php
 				the_posts_pagination( array(
 					'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
 					'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
@@ -35,7 +36,7 @@ get_header(); ?>
 			endif;
 			?>
 
-		</main><!-- #main -->
+		
 	</div><!-- #primary -->
 	<?php get_sidebar(); ?>
 </div><!-- .wrap -->
