@@ -17,7 +17,9 @@
 				wp_enqueue_style('homepage', get_stylesheet_directory_uri()."/assets/css/homepage.css");
 
 				wp_register_script('diapositives', get_stylesheet_directory_uri()."/assets/scripts/diapo.js",array('jquery'));
-				wp_enqueue_script('homepage', get_stylesheet_directory_uri()."/assets/scripts/homepage.js",array('jquery','diapositives'));
+				wp_register_script('infinite-scroll', get_stylesheet_directory_uri()."/assets/scripts/lib/infinitescroll.min.js",array('jquery'));
+				
+				wp_enqueue_script('homepage', get_stylesheet_directory_uri()."/assets/scripts/homepage.js",array('jquery','diapositives','infinite-scroll'));
 			}
 		}
 	}
