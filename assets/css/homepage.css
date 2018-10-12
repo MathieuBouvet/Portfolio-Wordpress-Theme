@@ -23,11 +23,11 @@
 	float: none;
 	height: calc(100vh - var(--admin-panel));
 	padding-bottom: 0;
-	background-color: rgb(34,34,34);
+	background-color: rgb(255,255,255);
 	
 }
 #primary article.drawings.type-drawings:nth-child(2n){
-	background-color: rgba(20,20,20);
+	background-color: rgba(241,240,238);
 }
 
 #::before {
@@ -78,6 +78,14 @@ img.drawing-image {
 	z-index: 0;
 	/* background-color: rgba(34,34,34); */
 }
+/* .post-thumbnail {
+	padding: 0;
+	transition: padding 1s;
+}
+
+.post-thumbnail.behind {
+	padding: 25px;
+} */
 
 
 @media screen and (min-width: 48em){

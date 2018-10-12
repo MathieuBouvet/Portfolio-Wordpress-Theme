@@ -15,6 +15,10 @@
 		public function loadHomepageAssets(){
 			if(is_front_page()){
 				wp_enqueue_style('homepage', get_stylesheet_directory_uri()."/assets/css/homepage.css");
+				// Load the dark colorscheme.
+				if ( 'dark' === get_theme_mod( 'colorscheme', 'light' ) || is_customize_preview() ) {
+					wp_enqueue_style( 'MBNC-colors-dark', get_stylesheet_directory_uri().'/assets/css/theme.dark.css');
+				}
 
 				wp_register_script('diapositives', get_stylesheet_directory_uri()."/assets/scripts/diapo.js",array('jquery'));
 				wp_register_script('infinite-scroll', get_stylesheet_directory_uri()."/assets/scripts/lib/infinitescroll.min.js",array('jquery'));

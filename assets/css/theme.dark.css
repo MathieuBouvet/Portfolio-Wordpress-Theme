@@ -1,0 +1,7 @@
+#primary article.drawings.type-drawings {
+	background-color: rgb(34,34,34);
+}
+
+#primary article.drawings.type-drawings:nth-child(2n){
+	background-color: rgba(20,20,20);
+}
