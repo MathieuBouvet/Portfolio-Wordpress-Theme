@@ -24,10 +24,15 @@ img.drawing-image {
 
 /* MEDIUM SCREENS */
 @media screen and (min-width: 30em) {
+	#primary #main {
+		column-count: 2;
+	}
 
 }
 
 /* LARGE SCREENS */
 @media screen and (min-width: 48em) {
-
+	#primary #main {
+		column-count: 3;
+	}
 }
