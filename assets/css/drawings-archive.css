@@ -1,0 +1,33 @@
+#primary #main {
+
+}
+
+article.drawings {
+	padding-bottom: 1.5em !important;
+}
+
+header.entry-header {
+	display: none;
+}
+
+#content #primary, #content header.page-header {
+	max-width: 100%;
+}
+
+.drawings .post-thumbnail {
+	margin-bottom: 0;
+}
+
+img.drawing-image {
+	border-radius: 5px;
+}
+
+/* MEDIUM SCREENS */
+@media screen and (min-width: 30em) {
+
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 48em) {
+
+}
