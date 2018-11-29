@@ -18,8 +18,14 @@ header.entry-header {
 	margin-bottom: 0;
 }
 
+
 img.drawing-image {
 	border-radius: 5px;
+	transition: filter 0.5s;
+}
+
+img.drawing-image:hover {
+	filter: brightness(120%);
 }
 
 /* MEDIUM SCREENS */
