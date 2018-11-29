@@ -51,12 +51,17 @@
 	min-height: 0;
 
 	display: flex;
+	margin-top: 1em;
+
+	/* transition: padding 0.1s linear; */
 }
 img.drawing-image {
 	margin: auto;
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+	-o-object-fit: contain;
+	border-radius: 5px;
 	/* background-color: #191919; */
 }
 
@@ -86,6 +91,10 @@ img.drawing-image {
 .post-thumbnail.behind {
 	padding: 25px;
 } */
+
+header.entry-header {
+	display: none;
+}
 
 
 @media screen and (min-width: 48em){
