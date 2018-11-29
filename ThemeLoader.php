@@ -23,13 +23,17 @@
 
 				wp_register_script('diapositives', get_stylesheet_directory_uri()."/assets/scripts/diapo.js",array('jquery'));
 				wp_register_script('infinite-scroll', get_stylesheet_directory_uri()."/assets/scripts/lib/infinitescroll.min.js",array('jquery'));
-				
+
 				wp_enqueue_script('homepage', get_stylesheet_directory_uri()."/assets/scripts/homepage.js",array('jquery','diapositives','infinite-scroll'));
 			}
 		}
 		public function loadDrawingsArchiveAssets(){
 			if(is_post_type_archive(MBPortfolioPlugin::CPT_NAME) && !is_front_page()){
 				wp_enqueue_style('drawings-archive', get_stylesheet_directory_uri()."./assets/css/drawings-archive.css");
+
+				wp_register_script('infinite-scroll', get_stylesheet_directory_uri()."/assets/scripts/lib/infinitescroll.min.js",array('jquery'));
+
+				wp_enqueue_script('gallery', get_stylesheet_directory_uri()."/assets/scripts/gallery.js",array('jquery','infinite-scroll'));
 			}
 		}
 	}
