@@ -1,9 +1,8 @@
-#primary #main {
-
+.grid-sizer {
+	width: 100%;
 }
-
 article.drawings {
-	padding-bottom: 1.5em !important;
+	padding-bottom: 1em !important;
 }
 
 header.entry-header {
@@ -30,15 +29,21 @@ img.drawing-image:hover {
 
 /* MEDIUM SCREENS */
 @media screen and (min-width: 30em) {
-	#primary #main {
-		column-count: 2;
+	.grid-sizer {
+		width: 50%;
+	}
+	article.drawings {
+		width: 45%;
 	}
 
 }
 
 /* LARGE SCREENS */
 @media screen and (min-width: 48em) {
-	#primary #main {
-		column-count: 3;
+	.grid-sizer {
+		width: 33%;
+	}
+	article.drawings {
+		width: 30%;
 	}
 }
