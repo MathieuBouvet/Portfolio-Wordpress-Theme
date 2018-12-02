@@ -23,6 +23,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<div class="grid-sizer"></div>
+			<div class="gutter-sizer"></div>
 		<?php
 		if ( have_posts() ) : ?>
 			<?php

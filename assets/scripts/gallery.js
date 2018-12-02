@@ -3,8 +3,9 @@
 		var l = $('#main').imagesLoaded(function(){
 			var masonry = new Masonry("#main", {
 				itemSelector: "article.drawings",
-				columnWidth: $(".grid-sizer")[0],
-				gutter: 0,
+				percentPosition: true,
+				columnWidth: ".grid-sizer",
+				gutter: ".gutter-sizer",
 			});
 
 			var container = $("#main").infiniteScroll({

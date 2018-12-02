@@ -1,8 +1,13 @@
 .grid-sizer {
 	width: 100%;
 }
+.gutter-sizer {
+	width: 0;
+}
 article.drawings {
-	padding-bottom: 1em !important;
+	width: 100%;
+	padding-bottom: 0 !important;
+	margin-bottom: 2em;
 }
 
 header.entry-header {
@@ -15,6 +20,7 @@ header.entry-header {
 
 .drawings .post-thumbnail {
 	margin-bottom: 0;
+	line-height: 0;
 }
 
 
@@ -30,10 +36,14 @@ img.drawing-image:hover {
 /* MEDIUM SCREENS */
 @media screen and (min-width: 30em) {
 	.grid-sizer {
-		width: 50%;
+		width: 48%;
 	}
 	article.drawings {
-		width: 45%;
+		width: 48%;
+		margin-bottom: 4%;
+	}
+	.gutter-sizer {
+		width: 4%;
 	}
 
 }
@@ -41,9 +51,13 @@ img.drawing-image:hover {
 /* LARGE SCREENS */
 @media screen and (min-width: 48em) {
 	.grid-sizer {
-		width: 33%;
+		width: 31.33333%;
 	}
 	article.drawings {
-		width: 30%;
+		width: 31.33333%;
+		margin-bottom: 3%;
+	}
+	.gutter-sizer {
+		width: 3%;
 	}
 }
