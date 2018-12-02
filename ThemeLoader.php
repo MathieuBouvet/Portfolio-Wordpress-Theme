@@ -7,6 +7,9 @@
 			add_action('wp_enqueue_scripts',array($this, 'loadParentStyle'));
 			add_action('wp_enqueue_scripts', array($this, 'loadHomepageAssets'));
 			add_action('wp_enqueue_scripts', array($this, 'loadDrawingsArchiveAssets'));
+
+			add_filter('previous_post_link',array($this, 'filterAdjacentPostLink'), 10, 5);
+			add_filter('next_post_link',array($this, 'filterAdjacentPostLink'), 10, 5);
 		}
 
 		public function loadParentStyle(){
@@ -37,6 +40,10 @@
 
 				wp_enqueue_script('gallery', get_stylesheet_directory_uri()."/assets/scripts/gallery.js",array('jquery','infinite-scroll','masonry'));
 			}
+		}
+
+		public function filterAdjacentPostLink($output, $format, $link, $post, $adjacent){
+			return str_replace("%thumbnail_url", get_the_post_thumbnail_url($post), $output);
 		}
 	}
 ?>
