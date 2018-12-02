@@ -9,7 +9,7 @@ article.drawings {
 	padding-bottom: 0 !important;
 	margin-bottom: 2em;
 }
-a.post-link img, a.post-link:hover img, a.post-link:active img {
+a.post-link:hover img, a.post-link:active img {
 	opacity: 1;
 }
 
@@ -30,9 +30,14 @@ header.entry-header {
 
 img.drawing-image {
 	border-radius: 5px;
+	opacity: 0.9;
+	transition: opacity 0.2s
+
 }
 
-
+img.drawing-image:hover {
+	opacity: 1;
+}
 /* MEDIUM SCREENS */
 @media screen and (min-width: 30em) {
 	.grid-sizer {

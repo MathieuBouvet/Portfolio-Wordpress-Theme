@@ -56,6 +56,7 @@ a.post-link img, a.post-link:hover img, a.post-link:active img {
 	display: flex;
 	margin-top: 1em;
 
+
 	/* transition: padding 0.1s linear; */
 }
 img.drawing-image {
