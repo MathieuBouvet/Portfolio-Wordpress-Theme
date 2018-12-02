@@ -4,6 +4,9 @@
 	--admin-panel: 0px;
 	--menu-fixed: 0;
 }
+a.post-link img, a.post-link:hover img, a.post-link:active img {
+	opacity: 1;
+}
 .site-content {
 	padding: 0;
 }

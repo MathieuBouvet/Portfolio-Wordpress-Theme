@@ -9,6 +9,9 @@ article.drawings {
 	padding-bottom: 0 !important;
 	margin-bottom: 2em;
 }
+a.post-link img, a.post-link:hover img, a.post-link:active img {
+	opacity: 1;
+}
 
 header.entry-header {
 	display: none;
@@ -16,6 +19,7 @@ header.entry-header {
 
 #content #primary, #content header.page-header {
 	max-width: 100%;
+	margin-bottom: 0;
 }
 
 .drawings .post-thumbnail {
@@ -26,12 +30,8 @@ header.entry-header {
 
 img.drawing-image {
 	border-radius: 5px;
-	transition: filter 0.5s;
 }
 
-img.drawing-image:hover {
-	filter: brightness(120%);
-}
 
 /* MEDIUM SCREENS */
 @media screen and (min-width: 30em) {

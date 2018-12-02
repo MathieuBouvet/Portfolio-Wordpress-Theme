@@ -44,10 +44,12 @@
 
 		<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
 			<div class="post-thumbnail">
-				<?php //the_post_thumbnail( 'twentyseventeen-featured-image' ); 
-					//echo get_the_post_thumbnail_url(get_the_ID());
-				?>
-				<img class="drawing-image" alt="<?php the_title()?>" src="<?php the_post_thumbnail_url(get_the_ID()) ?>"/>
+				<a class="post-link" href="<?php echo esc_url(get_permalink()) ?>">
+					<?php //the_post_thumbnail( 'twentyseventeen-featured-image' ); 
+						//echo get_the_post_thumbnail_url(get_the_ID());
+					?>
+					<img class="drawing-image" alt="<?php the_title()?>" src="<?php the_post_thumbnail_url(get_the_ID()) ?>"/>
+				</a>
 			</div><!-- .post-thumbnail -->
 		<?php endif; ?>
 
