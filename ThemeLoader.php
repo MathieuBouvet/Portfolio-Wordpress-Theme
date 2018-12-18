@@ -7,6 +7,7 @@
 			add_action('wp_enqueue_scripts',array($this, 'loadParentStyle'));
 			add_action('wp_enqueue_scripts', array($this, 'loadHomepageAssets'));
 			add_action('wp_enqueue_scripts', array($this, 'loadDrawingsArchiveAssets'));
+			add_action('wp_enqueue_scripts', array($this, 'loadSingleAssets'));
 
 			add_filter('previous_post_link',array($this, 'filterAdjacentPostLink'), 10, 5);
 			add_filter('next_post_link',array($this, 'filterAdjacentPostLink'), 10, 5);
@@ -44,6 +45,12 @@
 
 		public function filterAdjacentPostLink($output, $format, $link, $post, $adjacent){
 			return str_replace("%thumbnail_url", get_the_post_thumbnail_url($post), $output);
+		}
+
+		public function loadSingleAssets(){
+			if(is_single()){
+				wp_enqueue_style('single', get_stylesheet_directory_uri()."/assets/css/single.css");
+			}
 		}
 	}
 ?>
