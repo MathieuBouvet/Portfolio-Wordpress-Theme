@@ -1,0 +1,58 @@
+.adjacent-thumbnail {
+	width: 105px;
+	height: 105px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.nav-links {
+	display: flex;
+	flex-flow: row-reverse wrap;
+	justify-content: space-between;
+}
+
+.nav-links .nav-previous, .nav-links .nav-next {
+	float: none;
+	width: auto;
+	margin-top: 0;
+}
+
+div.nav-links::before, div.nav-links::after {
+	display: none;
+}
+
+.nav-links .nav-previous .nav-title .nav-title-icon-wrapper {
+	position: initial;
+}
+.nav-links .nav-next .nav-title .nav-title-icon-wrapper {
+	position: initial;
+}
+
+.nav-title {
+	display: flex;
+}
+.nav-title-icon-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+.nav-previous .nav-title .nav-title-icon-wrapper {
+	flex-flow: row-reverse wrap;
+}
+.nav-next .nav-title .nav-title-icon-wrapper {
+	flex-flow: row wrap;
+}
+
+.nav-subtitle {
+	text-align: center;
+}
+
+.navigation.post-navigation .nav-links a:hover,
+.navigation.post-navigation .nav-links a:active,
+.navigation.post-navigation .nav-links a:focus,
+.navigation.post-navigation .nav-links a {
+	text-decoration: none;
+	box-shadow: none, none;
+}
