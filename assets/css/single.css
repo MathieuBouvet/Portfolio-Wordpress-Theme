@@ -1,3 +1,11 @@
+:root{
+	--menu-height: 0px;
+}
+@media screen and (min-width: 48em){
+	:root{
+		--menu-height: 70px;
+	}
+}
 .adjacent-thumbnail {
 	width: 105px;
 	height: 105px;
@@ -60,3 +68,8 @@ div.nav-links::before, div.nav-links::after {
 	box-shadow: none;
 }
 
+.single-featured-image-header > img{
+	height: calc(100vh - var(--menu-height));
+	width: 100vw;
+	object-fit: contain;
+}
