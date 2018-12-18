@@ -28,13 +28,16 @@ div.nav-links::before, div.nav-links::after {
 	position: initial;
 }
 
+.nav-links > .nav-next:only-child {
+	margin-right: auto;
+}
 .nav-title {
 	display: flex;
 }
 .nav-title-icon-wrapper {
 	display: flex;
 	align-items: center;
-	justify-content: start;
+	justify-content: flex-start;
 	margin-right: 0 !important;
 	margin-left: 0 !important;
 }
@@ -54,5 +57,6 @@ div.nav-links::before, div.nav-links::after {
 .navigation.post-navigation .nav-links a:focus,
 .navigation.post-navigation .nav-links a {
 	text-decoration: none;
-	box-shadow: none, none;
+	box-shadow: none;
 }
+
